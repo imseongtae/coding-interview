@@ -1,0 +1,18 @@
+{
+  "name": "coding-interview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "-----marp preview server 명령어 예시-----": "pnpm marp:s docs/",
+    "marp:s": "marp -p --server",
+    "marp:w": "marp -p --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^3.4.0"    
+  }
+}
