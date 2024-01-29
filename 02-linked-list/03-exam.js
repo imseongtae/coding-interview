@@ -5,7 +5,7 @@ class ListNode {
   }
 }
 
-function deleteNode(node) {
+const deleteNode = (node) => {
   if (node == null || node.next == null) {
     throw new Error("Invalid node or last node cannot be deleted this way.");
   }

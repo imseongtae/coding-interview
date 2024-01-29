@@ -1,10 +1,10 @@
 /**
- * 주어진 링크드 리스트에서 특정 데이터를 가진 노드를 삭제한다.
+ * 주어진 링크드 리스트에서 특정 데이터를 가진 노드를 삭제
  * @param {Node} head - 링크드 리스트의 헤드 노드
  * @param {*} data - 삭제할 노드의 데이터
  * @return {Node} - 삭제 후의 링크드 리스트의 헤드 노드
  */
-function deleteNode(head, data) {
+const deleteNode = (head, data)  => {
   // 리스트의 head가 삭제할 노드인 경우
   if (head !== null && head.data === data) {
     return head.next; // head 다음 노드를 새로운 head로 설정
@@ -24,7 +24,7 @@ function deleteNode(head, data) {
   return head; // 삭제되는 노드가 없으면 원래의 head 반환
 }
 
-// Node 클래스 정의 (예시)
+/** Node 클래스 정의 (예시) */
 class Node {
   constructor(data) {
     this.data = data;
